@@ -12,7 +12,11 @@ class CreateGroupsTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('groups', function (Blueprint $table) {
+            $table->tinyInteger('id');
+            $table->string('name');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -22,6 +26,6 @@ class CreateGroupsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('groups');
     }
 }

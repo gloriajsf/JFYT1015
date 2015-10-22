@@ -12,7 +12,12 @@ class CreateDomainsTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('domains', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->integer('rank');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -22,6 +27,6 @@ class CreateDomainsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('domains');
     }
 }
