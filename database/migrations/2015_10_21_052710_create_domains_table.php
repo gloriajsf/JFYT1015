@@ -17,6 +17,8 @@ class CreateDomainsTable extends Migration
             $table->string('name');
             $table->integer('rank');
             $table->timestamps();
+            $table->index('name');
+            $table->index('rank');
         });
     }
 

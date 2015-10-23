@@ -35,7 +35,7 @@ class Authenticate
     public function handle($request, Closure $next)
     {
         if ($this->auth->guest()) {
-            return redirect()->guest('auth/login');
+            return view('auth.login');
         }
         return $next($request);
     }

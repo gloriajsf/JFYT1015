@@ -24,7 +24,8 @@ class AuthenticationController extends Controller {
     		'password' => 'required'
     	]);
     	if (Auth::attempt($request->only('email', 'password'))) {
-    		return redirect()->intended('status');
+            //dd(Auth::user());
+    		return redirect()->intended('/');
     	}
         return redirect('login')
             ->withInput($request->only('email'))
@@ -38,7 +39,9 @@ class AuthenticationController extends Controller {
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function getLogout() {
-        Auth::logout();
+        if(Auth::user()){
+            Auth::logout();
+        }
      	return redirect('/');
     }
 }
