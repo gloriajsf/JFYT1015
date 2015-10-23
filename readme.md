@@ -20,6 +20,10 @@ It's built in Laravel 5.1 framework and Homestead, with PostgreSql database.
 	-php artisan migrate --seed
 	-php artisan pullsites
 
+## Login
++Username admin@gmail.com
++Password adminpass
+
 ## Search and Edit
 Database is updated daily with top sites names and ranks. Users can login and type in as many domains as you wish, separated by a new line. Submitting these domains will display a table showing the domain name and its alexa rank, if it has one available.
 Additionally, admin users can edit an exiting domain rank or add a new domain and its rank.
