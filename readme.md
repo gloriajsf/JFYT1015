@@ -10,15 +10,15 @@ It's built in Laravel 5.1 framework and Homestead, with PostgreSql database.
 
 ## Installation
 1.Run the following commands from terminal
-	*git clone git@github.com:gloriajsf/JFYT1015
-	*cp .env.example .env
-	*composer install
-	*php artisan key:generate
+	-git clone git@github.com:gloriajsf/JFYT1015
+	-cp .env.example .env
+	-composer install
+	-php artisan key:generate
 2.In .env, update database connection details
 3.Create homestead schema in local database
 4.Run command
-	*php artisan migrate --seed
-	*php artisan pullsites
+	-php artisan migrate --seed
+	-php artisan pullsites
 
 ## Search and Edit
 Database is updated daily with top sites names and ranks. Users can login and type in as many domains as you wish, separated by a new line. Submitting these domains will display a table showing the domain name and its alexa rank, if it has one available.
