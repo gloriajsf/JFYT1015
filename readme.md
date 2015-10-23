@@ -4,21 +4,21 @@ It uses Laravel scheduler to run on a daily basis.
 It's built in Laravel 5.1 framework and Homestead, with PostgreSql database. 
 
 ## Requirement
-Virtualbox 5.*
-PHP 5.5
-Vagrant
+*Virtualbox 5.*
+*PHP 5.5
+*Vagrant
 
 ## Installation
-Run the following commands from terminal
-	#git clone git@github.com:gloriajsf/JFYT1015
-	#cp .env.example .env
-	#composer install
-	#php artisan key:generate
-#In .env, update database connection details
-#Create homestead schema in local database
-#Run command
-	#php artisan migrate --seed
-	#php artisan pullsites
+*Run the following commands from terminal
+	⋅⋅*git clone git@github.com:gloriajsf/JFYT1015
+	⋅⋅*cp .env.example .env
+	⋅⋅*composer install
+	⋅⋅*php artisan key:generate
+*In .env, update database connection details
+*Create homestead schema in local database
+*Run command
+	⋅⋅*php artisan migrate --seed
+	⋅⋅*php artisan pullsites
 
 ## Search and Edit
 Database is updated daily with top sites names and ranks. Users can login and type in as many domains as you wish, separated by a new line. Submitting these domains will display a table showing the domain name and its alexa rank, if it has one available.
