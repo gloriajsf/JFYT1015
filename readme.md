@@ -9,14 +9,14 @@ It's built in Laravel 5.1 framework and Homestead, with PostgreSql database.
 *Vagrant
 
 ## Installation
-*Run the following commands from terminal
+1.Run the following commands from terminal
 	*git clone git@github.com:gloriajsf/JFYT1015
 	*cp .env.example .env
 	*composer install
 	*php artisan key:generate
-*In .env, update database connection details
-*Create homestead schema in local database
-*Run command
+2.In .env, update database connection details
+3.Create homestead schema in local database
+4.Run command
 	*php artisan migrate --seed
 	*php artisan pullsites
 
