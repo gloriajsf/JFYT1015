@@ -24,7 +24,6 @@ class AuthenticationController extends Controller {
     		'password' => 'required'
     	]);
     	if (Auth::attempt($request->only('email', 'password'))) {
-            //dd(Auth::user());
     		return redirect()->intended('/');
     	}
         return redirect('login')

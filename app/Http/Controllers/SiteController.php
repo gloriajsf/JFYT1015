@@ -70,8 +70,6 @@ class SiteController extends Controller
         $user = Auth::user();
         $isAdmin = $user->isAdmin();
         $data = ['siteWithRank'=> $rankArray, 'adminUser' => $isAdmin ];
-        //dd($data);
-        //var_dump($siteArray);
         return view('home',$data);
     }
     /**
